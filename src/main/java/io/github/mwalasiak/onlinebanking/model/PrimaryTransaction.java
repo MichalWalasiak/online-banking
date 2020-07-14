@@ -12,4 +12,7 @@ public class PrimaryTransaction {
     private String status;
     private double amount;
     private BigDecimal availableBalance;
+
+    public PrimaryTransaction() {
+    }
 }
