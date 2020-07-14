@@ -14,8 +14,8 @@ public class User {
 
     private PrimaryAccount primaryAccount;
     private SavingsAccount savingsAccount;
-    private List<Appointment> appointmentList;
-    private List<Recipient> recipientList;
+    //private List<Appointment> appointmentList;
+    //private List<Recipient> recipientList;
 
     public Integer getUserId() {
         return userId;
@@ -97,7 +97,7 @@ public class User {
         this.savingsAccount = savingsAccount;
     }
 
-    public List<Appointment> getAppointmentList() {
+    /*public List<Appointment> getAppointmentList() {
         return appointmentList;
     }
 
@@ -111,7 +111,7 @@ public class User {
 
     public void setRecipientList(final List<Recipient> recipientList) {
         this.recipientList = recipientList;
-    }
+    }*/
 
     @Override
     public String toString() {
@@ -126,8 +126,8 @@ public class User {
                 ", enabled=" + enabled +
                 ", primaryAccount=" + primaryAccount +
                 ", savingsAcount=" + savingsAccount +
-                ", appointmentList=" + appointmentList +
-                ", recipientList=" + recipientList +
+                ", appointmentList=" + //appointmentList +
+                ", recipientList=" + //recipientList +
                 '}';
     }
 }
