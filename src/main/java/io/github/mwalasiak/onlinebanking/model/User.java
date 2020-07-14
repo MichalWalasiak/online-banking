@@ -12,6 +12,11 @@ public class User {
 
     private boolean enabled = true;
 
+    private PrimaryAccount primaryAccount;
+    private SavingsAcount savingsAcount;
+    private List<Appointment> appointmentList;
+    private List<Recipient> recipientList;
+
     public Integer getUserId() {
         return userId;
     }
@@ -74,5 +79,37 @@ public class User {
 
     public void setEnabled(final boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public PrimaryAccount getPrimaryAccount() {
+        return primaryAccount;
+    }
+
+    public void setPrimaryAccount(final PrimaryAccount primaryAccount) {
+        this.primaryAccount = primaryAccount;
+    }
+
+    public SavingsAcount getSavingsAcount() {
+        return savingsAcount;
+    }
+
+    public void setSavingsAcount(final SavingsAcount savingsAcount) {
+        this.savingsAcount = savingsAcount;
+    }
+
+    public List<Appointment> getAppointmentList() {
+        return appointmentList;
+    }
+
+    public void setAppointmentList(final List<Appointment> appointmentList) {
+        this.appointmentList = appointmentList;
+    }
+
+    public List<Recipient> getRecipientList() {
+        return recipientList;
+    }
+
+    public void setRecipientList(final List<Recipient> recipientList) {
+        this.recipientList = recipientList;
     }
 }
