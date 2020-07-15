@@ -1,5 +1,7 @@
 package io.github.mwalasiak.onlinebanking.model;
 
+import java.util.List;
+
 public class User {
 
     private Integer userId;
@@ -14,7 +16,7 @@ public class User {
 
     private PrimaryAccount primaryAccount;
     private SavingsAccount savingsAccount;
-    //private List<Appointment> appointmentList;
+    private List<Appointment> appointmentList;
     //private List<Recipient> recipientList;
 
     public Integer getUserId() {
@@ -97,7 +99,7 @@ public class User {
         this.savingsAccount = savingsAccount;
     }
 
-    /*public List<Appointment> getAppointmentList() {
+    public List<Appointment> getAppointmentList() {
         return appointmentList;
     }
 
@@ -105,7 +107,7 @@ public class User {
         this.appointmentList = appointmentList;
     }
 
-    public List<Recipient> getRecipientList() {
+    /*public List<Recipient> getRecipientList() {
         return recipientList;
     }
 
@@ -126,7 +128,7 @@ public class User {
                 ", enabled=" + enabled +
                 ", primaryAccount=" + primaryAccount +
                 ", savingsAcount=" + savingsAccount +
-                ", appointmentList=" + //appointmentList +
+                ", appointmentList=" + appointmentList +
                 ", recipientList=" + //recipientList +
                 '}';
     }
