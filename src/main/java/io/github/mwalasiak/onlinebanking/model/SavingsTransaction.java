@@ -15,4 +15,13 @@ public class SavingsTransaction {
 
     private SavingsAccount savingsAccount;
 
+    public SavingsTransaction(final Date date, final String description, final String type, final String status, final double amount, final BigDecimal availableBalance, final SavingsAccount savingsAccount) {
+        this.date = date;
+        this.description = description;
+        this.type = type;
+        this.status = status;
+        this.amount = amount;
+        this.availableBalance = availableBalance;
+        this.savingsAccount = savingsAccount;
+    }
 }
